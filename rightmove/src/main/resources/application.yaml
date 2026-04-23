@@ -3,9 +3,9 @@ spring:
     name: rightmove
 
   datasource:
-    url: jdbc:mysql://shortline.proxy.rlwy.net:21003/railway?useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=UTC
-    username: root
-    password: KsNJjAmAJRkFhrgXYvEhejQZAIwxwwyJ
+    url: ${DB_URL}
+    username: ${DB_USER}
+    password: ${DB_PASS}
     driver-class-name: com.mysql.cj.jdbc.Driver
 
   jpa:
@@ -23,7 +23,7 @@ spring:
       max-request-size: 100MB
 
 server:
-  port: ${PORT:8080}   # IMPORTANT for Render/Railway
+  port: ${PORT:8080}
   address: 0.0.0.0
 
 springdoc:
