@@ -1,0 +1,46 @@
+# ── Java / Spring Boot ──
+/target/
+/out/
+*.class
+*.jar
+*.war
+*.ear
+
+# ── Maven / Gradle ──
+/pom.xml.tag
+/pom.xml.releaseBackup
+/pom.xml.versionsBackup
+/logs/
+*.log
+dependency-reduced-pom.xml
+build/
+!gradle-wrapper.jar
+
+# ── IntelliJ IDEA ──
+.idea/
+*.iml
+*.iws
+/.idea_modules/
+
+# ── Eclipse ──
+.project
+.classpath
+.settings/
+
+# ── VS Code ──
+.vscode/
+
+# ── OS files ──
+.DS_Store
+Thumbs.db
+
+# ── Spring Boot ──
+/spring.log
+/target/
+!.mvn/wrapper/maven-wrapper.jar
+
+# ── Node / Frontend (if any) ──
+node_modules/
+dist/
+npm-debug.log
+yarn-error.log
