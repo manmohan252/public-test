@@ -3,9 +3,9 @@ spring:
     name: rightmove
 
   datasource:
-    url: jdbc:mysql://localhost:3306/cp?useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=UTC
+    url: jdbc:mysql://shortline.proxy.rlwy.net:21003/railway?useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=UTC
     username: root
-    password: root
+    password: KsNJjAmAJRkFhrgXYvEhejQZAIwxwwyJ
     driver-class-name: com.mysql.cj.jdbc.Driver
 
   jpa:
@@ -21,15 +21,13 @@ spring:
       enabled: true
       max-file-size: 100MB
       max-request-size: 100MB
-      
+
 server:
-  port: 8080
+  port: ${PORT:8080}   # IMPORTANT for Render/Railway
   address: 0.0.0.0
+
 springdoc:
   api-docs:
     path: /v3/api-docs
   swagger-ui:
     path: /swagger-ui.html
-
-
-
